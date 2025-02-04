@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS File -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        h1 {
+            color: #3498db;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, textarea {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .submit-button {
+            padding: 12px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+        }
+        .submit-button:hover {
+            background-color: #2980b9;
+            transform: scale(1.1);
+        }
+        .home-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+        }
+        .home-button:hover {
+            background-color: #2980b9;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Me</h1>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+        <a href="index.html" class="home-button">Home</a>
+    </div>
+</body>
+</html>

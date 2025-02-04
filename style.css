@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3e3a3a;
+    color: #fff;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+  }
+  
+  .name-top {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #f7efb7;
+   
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #f7efb7;
+    text-shadow: 0 0 5px #f7efb7, 0 0 10px #f7efb7;
+  }
+  
+  main {
+    display: flex;
+    padding: 50px;
+  }
+  
+  .left-section {
+    flex: 1;
+  }
+  
+  .profile-photo {
+    width: 400px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    /* border-radius: 50%; */ /* Remove or comment out this line */
+    border: 3px solid #f7efb7;
+    box-shadow: 0 0 10px #f7efb7, 0 0 20px #f7efb7;
+  }
+  
+  .right-section {
+    flex: 2;
+    padding-left: 50px;
+  }
+  
+  
+  .big-name {
+    font-size: 48px;
+    color: #f7efb7;
+    text-shadow: 0 0 5px #f7efb7, 0 0 10px #f7efb7;
+    animation: glow 2s infinite alternate;
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 5px #f7efb7, 0 0 10px #f7efb7;
+    }
+    100% {
+      text-shadow: 0 0 20px #f7efb7, 0 0 30px #f7efb7;
+    }
+  }
+  
+  .description {
+    font-size: 20px;
+    color: #ccc;
+    margin-top: 10px;
+  }
+  
+  .social-media {
+    margin-top: 20px;
+  }
+  
+  .social-media a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .social-media a:hover {
+    color: #f7efb7;
+    text-shadow: 0 0 5px #f7efb7, 0 0 10px #f7efb7;
+  }
+  
+  /* Hire Me Button Styles */
+#hireMeButton {
+    background-color: #f7efb7; /* Neon red background */
+    color: #000000; /* White text */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #f7efb7, 0 0 10px #f7efb7; /* Neon glow effect */
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  #hireMeButton:hover {
+    background-color: #f7efb7; /* Darker red on hover */
+    box-shadow: 0 0 10px #f7efb7, 0 0 20px #f7efb7; /* Stronger glow on hover */
+  }
+  
+  #hireMeButton:active {
+    background-color: #f7efb7; /* Even darker red on click */
+    box-shadow: 0 0 5px #f7efb7, 0 0 10px #f7efb7; /* Smaller glow on click */
+  }
+ /* Remove this block if no longer needed */
+.blur-effect {
+    filter: blur(5px);
+    transition: filter 0.5s;
+  }
+  
+  .blur-effect:hover {
+    filter: blur(0);
+  }
+/* Smartphones ke liye */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+}
+
+/* Tablets ke liye */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+}
+
+/* Desktops ke liye */
+@media (min-width: 1025px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+}
+
+
